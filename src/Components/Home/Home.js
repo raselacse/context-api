@@ -3,11 +3,11 @@ import { CategoryContext } from '../../App';
 import Categories from '../Categories/Categories';
 
 const Home = () => {
-    const category = useContext(CategoryContext)
+    const [category] = useContext(CategoryContext)
     return (
         <>
            <div style={{border:"1px solid gray"}}>
-                <h1>This is Home {category}</h1>
+                <h1>This is Home</h1>
                 <Categories></Categories>
            </div>
         </>

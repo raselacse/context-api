@@ -6,7 +6,7 @@ import { createContext, useState } from 'react';
 export const CategoryContext = createContext()
 
 function App() {
-  const [category, setCategory] = useState('Laptop')
+  const [category, setCategory] = useState([])
   return (
     <CategoryContext.Provider value={[category, setCategory]}>
       <Header></Header>
